@@ -4,8 +4,18 @@
   "description": "Discord bot that helps cryptocurrency 'users' to know what is going on in the market",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "develop": "node_modules/nodemon/bin/nodemon.js index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Pedro Pontes",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "dotenv": "^8.2.0",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
 }
