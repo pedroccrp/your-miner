@@ -74,7 +74,7 @@ Contributions are what make the open source community such an amazing place to b
 
 - Pedro Pontes - [pedroccrp](https://github.com/pedroccrp)
 
-See [contributors](https://github.com/pedroccrp/project_name/graphs/contributors) page for more info.
+See contributors page for more info.
 
 <!--
 
