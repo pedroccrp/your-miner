@@ -3,7 +3,7 @@ const { prefix } = require('../config');
 const messageHandler = {
   separateCommandAndArguments: (message) => {
     const bruteContent = message.content;
-    const cleanContent = bruteContent.slice(prefix.length);
+    const cleanContent = bruteContent.slice(prefix.length).trimStart();
 
     const arguments = cleanContent.split(' ');
     const command = arguments.shift().toLowerCase();
