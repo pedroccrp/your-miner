@@ -1,0 +1,11 @@
+{
+  "name": "your-miner",
+  "version": "1.0.0",
+  "description": "Discord bot that helps cryptocurrency 'users' to know what is going on in the maket",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pedro Pontes",
+  "license": "ISC"
+}
