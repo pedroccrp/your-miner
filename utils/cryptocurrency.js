@@ -9,11 +9,9 @@ const getCurrencyData = async currencyString => {
     return null;
   }
 
-  value = await coin.getValue();
+  info = await coin.getInfo();
 
-  console.log(value);
-
-  return value;
+  return info;
 };
 
 module.exports = {

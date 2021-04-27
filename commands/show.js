@@ -9,9 +9,19 @@ module.exports = async arguments => {
 
   const currency = arguments[0];
 
-  const value = await cryptocurrency.getCurrencyData(currency);
+  const currencyInfo = await cryptocurrency.getCurrencyData(currency);
+
+  if (!currencyInfo) {
+    return {
+      reply: `Currency not implement or not found!`,
+    };
+  }
 
   return {
-    reply: `Value of coin is ${value}.`,
+    reply: `
+    Value: ${currencyInfo.value} ${currencyInfo.valueCurrency}
+    Fluctuation (Day): ${currencyInfo.dayChange.replace(/\s/g, '')}
+    Min (Day): ${currencyInfo.dayMin.replace(/\s/g, '')}
+    Max (Day): ${currencyInfo.dayMax.replace(/\s/g, '')}`,
   };
 };
